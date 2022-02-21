@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('Build Docker Image'){
         steps{
-        sh "docker build . -t uzzama/dream-test:v2:${env.BUILD_ID}"
+        sh "docker build -t uzzama/dream-test:v2${env.BUILD_ID}"
      }
 }
 
