@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: dream-app
-        image: uzzama/dream-test:v2
+        image: uzzama/dream-test:{{BUILD_NUMBER}}
         ports:
         - containerPort: 80
